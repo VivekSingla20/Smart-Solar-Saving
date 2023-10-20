@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Solar Saving</title>
+    <link rel="stylesheet" href="../css files/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+    <link rel="icon" href="../images/favicon.png">
+
+</head>
+
+<body>
+    <script src="../js/index.js"></script>
+
+    <header>
+        <nav>
+            <div class="menubar">
+                <ul>
+                    <li class="home"><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li class="dropdown_menu"><a href="boycott.html"><i class="fa-solid fa-wallet"></i> Boycott
+                            Bill</a></li>
+                    <li class="dropdown_menu"><a href="solar.html"><i class="fa-solid fa-solar-panel"></i> Solar
+                            Panels</a></li>
+                    <li class="dropdown_menu"><a href="roof.html"><i class="fa-solid fa-people-roof"></i> Solar
+                            Roof</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- login and Signup <button></button> -->
+        <button class="bttn" onClick="open_btn()">Login</button>
+        <button class="bttn2" onclick="open_btn2()">Sign Up</button>
+    </header>
+    <main>
+        <section>
+            <div class="container1">
+                <div class="mascot"></div>
+                <div class="Slogan">Bycott Bill</div>
+            </div>
+        </section>
+
+        <section>
+            <div class="window">
+                <!-- <h1>Login</h1> -->
+                <div class="formelements">
+                    <label for="kwh">1. Rate of 1 Unit kwh(in rupees):</label>
+                    <input type="number"  id="kwh_rate" placeholder="Enter rate">
+                    <!-- <button  onclick="calculate()" class="windowbttn">Submit</button> -->
+                </div>
+                <div class="formelements">
+                    <label for="area_roof">2. Area of roof (in m<sup>2</sup>):</label>
+                    <input type="number" id="area_roof" placeholder="Enter area "> <!--<button
+                        class="windowbttn" onclick="calculate()">Submit</button> -->
+                </div>
+                <div class="formelements">
+                    <label for="kwh_used">3. Units used in 3 consecutive months (in kwh):</label>
+                    <input type="number" class="blockinput" id="kwh_used" placeholder="">
+                    <input type="number" class="blockinput" id="kwh_used1" placeholder="">
+                    <input type="number" class="blockinput1" id="kwh_used2" placeholder=""><!-- <button
+                        class="windowbttn"  onclick="calculate()" >Submit</button> -->
+                </div>
+            </div>
+            <div>
+                <button class="finalbttn"  onclick="calculate()">Calculate Now</button>
+            </div>
+        </section>
+
+
+        <section>
+            <article>
+                <!-- loginpopup -->
+                <div class="popup" id="popup1">
+                    <div class="icon"><i class="fa-solid fa-user"></i></div>
+                    <div class="close" onclick="close_btn()">&times;</div>
+                    <h1>Login</h1>
+                    <div class="formelements">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Enter Email">
+                    </div>
+                    <div class="formelements">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" placeholder="Enter Password">
+                    </div>
+                    <div class="formelements">
+                        <input type="checkbox" id="rememberme">
+                        <label for="rememberme">Remember Me</label>
+                    </div>
+                    <div class="formelements">
+                        <button class="buttonsignin" onclick="submitted_alert()">Sign In</button>
+                    </div>
+                    <div class="formelements">
+                        <a href="#" target="_blank">Forgot Password?</a>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <!-- signuppop -->
+                <div class="popup1" id="popup2">
+                    <div class="icon"><i class="fa-solid fa-user"></i></div>
+                    <div class="close" onclick="close_btn2()">&times;</div>
+                    <h1>Signup</h1>
+                    <div class="formelements">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" placeholder="Enter Name">
+                    </div>
+                    <div class="formelements">
+                        <label for="date">Date of Birth:</label>
+                        <input type="date" id="date" placeholder="Enter D.O.B">
+                    </div>
+                    <div class="formelements">
+                        <label for="email2">Email:</label>
+                        <input type="email" id="email2" placeholder="Enter your Email">
+                    </div>
+                    <div class="formelements">
+                        <label for="password2">Password:</label>
+                        <input type="password" id="password2" placeholder="Create a Password">
+                    </div>
+                    <div class="formelements">
+                        <input type="checkbox" id="rememberme">
+                        <label for="rememberme">Remember Me</label>
+                    </div>
+                    <div class="formelements">
+                        <button class="buttonsignin" onclick="submitted_alert()">Sign In</button>
+                    </div>
+                    <div class="formelements">
+                        <a href="#" target="_blank">Forgot Password?</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="footercontainer">
+            <ul class="aboutus">
+                <li class="heading">About Us</li>
+                <li>About Smart Saving</li>
+                <li>Awards and Recognitions</li>
+                <li>Our Research</li>
+                <li>Donors</li>
+                <li>Financials</li>
+            </ul>
+            <ul class="ourwork">
+                <li class="heading">Our Work</li>
+                <li>Welfare Work</li>
+                <li>Enviroment Conservation</li>
+                <li>Awareness Programmes</li>
+                <li>Educational Grants</li>
+            </ul>
+            <div class="container">
+                <div class="links">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></i></a>
+                    <a href="https://www.google.com/"><i class="fa-brands fa-google"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.twiiter.com/"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyrighted">
+            <div>
+                &#x2022;Conditions of Use & Sale
+            </div>
+            <div>
+                &#x2022;Privacy Notice
+            </div>
+            <div>
+                &bullet;Interest-Based Ads
+            </div>
+        </div>
+        <div class="info">
+            <div>
+                © 2016-2023, Smart Saving, Inc. or its affiliates
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
