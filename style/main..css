@@ -7,6 +7,10 @@ body{
     font-family: Montserrat, sans-serif;
     width: fit-content;
 }
+main{
+    background-image:  url(https://spectrum.ieee.org/media-library/a-row-of-solar-cells-underneath-a-starry-nighttime-sky.jpg?id=29665013&width=1200&height=900);
+    background-size: cover;
+}
 
 /* Menubar */
 .menubar{
@@ -98,11 +102,13 @@ background: linear-gradient(90deg, rgba(6,42,107,0.57) 0%, rgba(5,50,227,0.56887
 
     height: 366px;
     width: 650px;
+    color: yellow;
     text-align: center;
     font-size: 115px;
     margin-top: 57px;
     font-family: Anton;
     transform: translateX(-437px);
+    text-decoration: yellow wavy underline;
     }
 .Slogan::before{
     content: open-quote;
@@ -118,8 +124,9 @@ background: linear-gradient(90deg, rgba(6,42,107,0.57) 0%, rgba(5,50,227,0.56887
     border: 5px solid black;
     box-shadow: 0px 0px 20px 10px rgba(110, 109, 115, 0.173);
     border-radius: 25px;
-    height: 250px;
+    height: 400px;
     width: 500px;
+    background-color: linear-gradient(45deg, red orange);
     
 }
 .window .formelements label{
@@ -127,11 +134,19 @@ background: linear-gradient(90deg, rgba(6,42,107,0.57) 0%, rgba(5,50,227,0.56887
     margin-left: 10px;
     margin-top: 10px;
     color: black;
+    font-size: 30px;
+    color: red;
+    font-family: cursive;
+    font-weight: 700;
 } 
 .window .formelements input{
     margin: 0px 10px;
     border-bottom: 2px solid black;
     outline: none;
+    height: 20px;
+    font-size: 20px;
+    color: red;
+
 }
 .window .formelements input.blockinput{
     display: block;
@@ -171,24 +186,24 @@ background: linear-gradient(90deg, rgba(6,42,107,0.57) 0%, rgba(5,50,227,0.56887
 }
 .finalbttn{
     position: relative;
+    color: red;
+    font-weight: 900;
+    font-size: 20px;
     width: 509.6px;
     height: 40px;
     margin-top: 20px;
     border-radius: 25px;
-    transform: translate(510px,-155px)
-    
-}
-.finalbttn{
-    position: relative;
-    border: 2px solid red;
+    transform: translate(510px,-7px);
+    border: 4px solid red;
     background: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-transform: uppercase;
     padding: 0px 10px;
     cursor: pointer;
     transition: color 0.4s linear;
-    /* transform-origin: center; */
+    
 }
+
 .finalbttn:hover{
     color: white;
     /* transform: translateY(-10px); */
@@ -475,5 +490,29 @@ background: linear-gradient(90deg, rgba(6,42,107,0.57) 0%, rgba(5,50,227,0.56887
 }
 
 
+.left{
+    float: left;
+    width:200px;
+    height: 150px;
+    margin-right: 10px;
+}
+
+.right{
+    float: right;
+    width:200px;
+    height: 150px;
+    margin-left: 10px;
+}
+.intro{
+    font-size: large;
+    color: darkgoldenrod;
+    margin-top: 30px;
+    padding: 30px;
+    border: 2px solid darkgoldenrod ;
+    border-radius: 20px;
+    background-color: white;
+    background-image: url(https://spectrum.ieee.org/media-library/a-row-of-solar-cells-underneath-a-starry-nighttime-sky.jpg?id=29665013&width=1200&height=900);background-size: cover;
+
+}
 
 

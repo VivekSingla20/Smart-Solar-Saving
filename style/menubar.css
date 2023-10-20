@@ -1,0 +1,66 @@
+.menubar{
+    background-color:#03a9f4;
+    background-image: url(https://spectrum.ieee.org/media-library/a-row-of-solar-cells-underneath-a-starry-nighttime-sky.jpg?id=29665013&width=1200&height=900);
+    background-size: cover;
+    text-align: center;
+    /* position: fixed; */
+    width: 100vw;
+}
+.menubar ul{
+    display: flex;
+    list-style: none;
+    color: white;
+    justify-content: center;
+}
+.menubar ul li{
+    
+    padding: 12px;
+    margin: 5px;   
+}
+.menubar ul li.home{
+    position: absolute;
+    left: 141px;
+    z-index: 1;
+    
+}  
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    
+}
+.home, .menubar ul li:hover{
+    background: rgb(6,42,107);
+background: linear-gradient(90deg, rgba(6,42,107,0.57) 0%, rgba(5,50,227,0.5688725490196079) 90%, rgba(0,134,255,0.57) 100%);
+    border-radius: 15px;
+}
+.bttn2{
+    position: absolute;
+    top: 13px;
+    right: 40px;
+    width: 93px;
+    height: 32px;
+    font-size: 15px;
+    padding: 7px;
+    text-align: center;
+    transform: scale(1.2);
+    border-radius: 12px;
+    background-color: #47629c;
+    color: white;
+
+}
+.bttn{
+    position: absolute;
+    top: 13px;
+    right: 133px;
+    width: 93px;
+    height: 32px;
+    font-size: 15px;
+    text-align: center;
+    padding: 7px;
+    margin-right: 35px;
+    background-color: #47629c;
+    color: white;
+    border-radius: 12px;
+    transform: scale(1.2);
+}
